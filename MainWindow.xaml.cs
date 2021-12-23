@@ -57,12 +57,12 @@ namespace WPF_3
 
         private void btnUnderLine_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.TextDecorations == TextDecorations.Baseline)
+            if (textBox.TextDecorations == null)
             {
                 textBox.TextDecorations = TextDecorations.Underline;
             }
             else
-                textBox.TextDecorations = TextDecorations.Baseline;
+                textBox.TextDecorations = null;
         }
 
         private void rbtnRed_Click(object sender, RoutedEventArgs e)
